@@ -1,0 +1,71 @@
+.wrap{
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  border-radius: 18px;
+  padding: 14px;
+}
+.screen{
+  width: 100%;
+  text-align:center;
+  padding: 10px 0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+  border: 1px solid rgba(255,255,255,.10);
+  color: rgba(255,255,255,.8);
+  font-weight: 900;
+  letter-spacing: .6px;
+}
+.grid{
+  margin-top: 14px;
+  display:grid;
+  gap: 6px;
+}
+.seat{
+  height: 28px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.25);
+  color: rgba(255,255,255,.70);
+  font-size: 11px;
+  cursor:pointer;
+}
+
+.vip{
+  border-color: rgba(164, 102, 255, .45);
+  background: rgba(164, 102, 255, .10);
+}
+.seat:hover{ background: rgba(255,255,255,.06); }
+.reserved{
+  cursor:not-allowed;
+  background: rgba(255,255,255,.06);
+  opacity: .35;
+}
+.selected{
+  background: rgba(130,70,255,.22);
+  border-color: rgba(130,70,255,.55);
+  color: rgba(255,255,255,.95);
+  box-shadow: 0 10px 20px rgba(130,70,255,.15);
+}
+.legend{
+  margin-top: 12px;
+  display:flex;
+  gap: 14px;
+  color: rgba(255,255,255,.65);
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.dot{
+  display:inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 4px;
+  margin-right: 6px;
+  vertical-align: -1px;
+  border: 1px solid rgba(255,255,255,.12);
+}
+.dotAvail{ background: rgba(0,0,0,.25); }
+.dotVip{ background: rgba(164, 102, 255, .75); border-color: rgba(164, 102, 255, .55); }
+.dotSel{ background: rgba(130,70,255,.22); border-color: rgba(130,70,255,.55); }
+.dotRes{ background: rgba(255,255,255,.06); opacity: .45; }
+
+.hint{ opacity: .65; }

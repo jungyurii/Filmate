@@ -1,0 +1,246 @@
+.topbar {
+  position: relative;
+  z-index: 60;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(20, 20, 26, .50);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .32);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.pageTitle {
+  font-weight: 850;
+  color: rgba(255, 255, 255, .94);
+  letter-spacing: .2px;
+}
+
+.menuPill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(0, 0, 0, .18);
+}
+
+.menuRoot {
+  position: relative;
+}
+
+.menuBtn {
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, .78);
+  outline: none;
+  font-weight: 800;
+  padding: 8px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.menuBtn:hover {
+  background: rgba(255, 255, 255, .06);
+  color: rgba(255, 255, 255, .92);
+}
+
+.menuBtnActive {
+  background: rgba(255, 255, 255, .08);
+  color: rgba(255, 255, 255, .95);
+}
+
+.chev {
+  opacity: .75;
+  margin-left: 4px;
+}
+
+.menuPanel,
+.menuPanelWide {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 220px;
+  padding: 10px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(20, 20, 26, .80);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .45);
+  z-index: 20;
+}
+
+.menuPanelWide {
+  min-width: 520px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 10px;
+}
+
+.menuCol {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menuTitle {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, .85);
+  padding: 2px 6px;
+}
+
+.menuItem {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, .03);
+  color: rgba(255, 255, 255, .88);
+  font-weight: 750;
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, .08);
+}
+
+.menuDivider {
+  height: 1px;
+  background: rgba(255, 255, 255, .10);
+  margin: 8px 4px;
+}
+
+.menuHint {
+  color: rgba(255, 255, 255, .62);
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+.genreGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 4px;
+}
+
+.genreBtn {
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(0, 0, 0, .15);
+  color: rgba(255, 255, 255, .85);
+  padding: 10px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.genreBtn:hover {
+  background: rgba(255, 255, 255, .06);
+}
+
+/* 검색바가 프로필까지 밀어내지 않도록 폭 제한 */
+.center{
+  flex: 0 1 760px;
+  min-width: 0;
+  max-width: 760px;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+/* 로그인/로그아웃 버튼 */
+.authBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 42px;
+  padding: 0 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.20);
+  color: rgba(255,255,255,.90);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.authBtn:hover {
+  background: rgba(255, 255, 255, .05);
+}
+
+.authBtn i{
+  font-size: 11px;
+  opacity: .88;
+}
+
+.authBtn span{
+  display: inline-block;
+  transform: translateY(-.2px);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(0, 0, 0, .18);
+  cursor: pointer;
+  color: rgba(255, 255, 255, .86);
+}
+
+.user:hover {
+  background: rgba(255, 255, 255, .05);
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .55), rgba(130, 70, 255, .35));
+  border: 1px solid rgba(255, 255, 255, .14);
+}
+
+.userText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.05;
+}
+
+.userName {
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, .92);
+}
+
+.userPlan {
+  font-size: 11px;
+  color: rgba(255, 255, 255, .60);
+}
+
+@media (max-width: 860px) {
+  .userText {
+    display: none;
+  }
+}

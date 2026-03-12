@@ -1,0 +1,21 @@
+.wrap{
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  padding-top: 28px;
+}
+.card{
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  border-radius: 22px;
+  padding: 18px;
+}
+.title{
+  font-weight: 1000;
+  color: var(--text-strong);
+  font-size: 18px;
+}
+.sub{
+  margin-top: 8px;
+  color: rgba(255,255,255,.65);
+}
+.linkReset{ text-decoration:none; display:inline-block; margin-top: 14px; }

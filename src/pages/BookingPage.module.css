@@ -1,0 +1,271 @@
+.wrap {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 14px;
+  align-items: start;
+}
+
+.panel {
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .03);
+  border-radius: 22px;
+  padding: 14px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 88px;
+}
+
+.movieCard {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, .18);
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.poster {
+  width: 54px;
+  height: 74px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.movieTitle {
+  font-weight: 900;
+  color: var(--text-strong);
+}
+
+.movieSub {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, .65);
+}
+
+.field {
+  margin-top: 14px;
+}
+
+.label {
+  color: rgba(255, 255, 255, .75);
+  font-weight: 900;
+  font-size: 12px;
+  margin: 0 0 10px 2px;
+  letter-spacing: .2px;
+}
+
+.pills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pill {
+  text-align: left;
+  padding: 10px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(0, 0, 0, .18);
+  cursor: pointer;
+}
+
+.pill:hover {
+  background: rgba(255, 255, 255, .05);
+}
+
+.pillActive {
+  background: rgba(130, 70, 255, .18);
+  border-color: rgba(130, 70, 255, .45);
+}
+
+.pillName {
+  color: var(--text-strong);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.pillArea {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, .65);
+  font-size: 12px;
+}
+
+.days {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.day {
+  border-radius: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(0, 0, 0, .18);
+  color: rgba(255, 255, 255, .82);
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.day:hover {
+  background: rgba(255, 255, 255, .05);
+}
+
+.dayActive {
+  background: rgba(130, 70, 255, .18);
+  border-color: rgba(130, 70, 255, .45);
+  color: rgba(255, 255, 255, .95);
+}
+
+.summaryCard {
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .03);
+  border-radius: 22px;
+  padding: 14px;
+}
+
+.sumTitle {
+  font-weight: 1000;
+  color: var(--text-strong);
+  font-size: 16px;
+}
+
+.sumRow {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sumKey {
+  color: rgba(255, 255, 255, .60);
+  font-size: 12px;
+}
+
+.sumVal {
+  color: rgba(255, 255, 255, .86);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.divider {
+  margin: 14px 0;
+  height: 1px;
+  background: rgba(255, 255, 255, .08);
+}
+
+.total {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 1000;
+  color: var(--text-strong);
+  font-size: 16px;
+}
+
+.payBtn {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.note {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, .60);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.sideHint {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, .62);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.stepActions {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.confirmBox {
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .03);
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.confirmRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  color: rgba(255, 255, 255, .80);
+}
+
+.confirmRow:last-child {
+  border-bottom: none;
+}
+
+.confirmRow span {
+  opacity: .7;
+  font-size: 12px;
+}
+
+.confirmRow b {
+  font-size: 13px;
+}
+
+.backLink {
+  color: rgba(255, 255, 255, .72);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.backLink:hover {
+  color: rgba(255, 255, 255, .95);
+}
+
+.msg,
+.err {
+  width: min(1200px, 92vw);
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .03);
+}
+
+.err {
+  color: rgba(255, 140, 180, .95);
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .pills {
+    grid-template-columns: 1fr;
+  }
+}

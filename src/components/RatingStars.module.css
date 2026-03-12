@@ -1,0 +1,26 @@
+.wrap{ display:inline-flex; gap: 2px; align-items:center; }
+.star{
+  line-height: 1;
+  opacity: .35;
+  filter: drop-shadow(0 0 10px rgba(130,70,255,.0));
+}
+.full{ opacity: .95; filter: drop-shadow(0 0 10px rgba(130,70,255,.25)); color: rgba(207,177,255,1); }
+.half{
+  opacity: .95;
+  color: rgba(207,177,255,1);
+  position: relative;
+}
+.half::after{
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  color: rgba(255,255,255,.35);
+  opacity: .9;
+}
+.empty{ color: rgba(255,255,255,.35); }
+.sm{ font-size: 14px; }
+.md{ font-size: 16px; }
+.lg{ font-size: 20px; }

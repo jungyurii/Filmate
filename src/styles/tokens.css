@@ -1,0 +1,20 @@
+:root {
+  --bg: #0b0b0f;
+  --bg2: #090914;
+  --surface-rgb: 18, 18, 26;
+  --surface: rgba(var(--surface-rgb), 0.82);
+  --surface-2: rgba(var(--surface-rgb), 0.9);
+  --stroke: rgba(255, 255, 255, 0.12);
+
+  --text: rgba(255, 255, 255, 0.82);
+  --text-strong: rgba(255, 255, 255, 0.96);
+  --text-muted: rgba(255, 255, 255, 0.62);
+
+  --accent-rgb: 130, 70, 255;
+  --accent-soft-rgb: 207, 177, 255;
+  --accent: rgb(var(--accent-rgb));
+  --accent-soft: rgb(var(--accent-soft-rgb));
+
+  --r-lg: 24px;
+  --shadow-1: 0 14px 34px rgba(0, 0, 0, 0.35);
+}

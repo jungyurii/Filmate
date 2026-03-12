@@ -1,0 +1,152 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.heroShell{
+  border-radius: 26px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(20,20,26,.42);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 24px 60px rgba(0,0,0,.32);
+  padding: 14px;
+}
+
+.heroCard{
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  min-height: 330px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.25);
+}
+
+.heroBg{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05);
+  transform: scale(1.02);
+}
+
+.heroShade{
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 520px at 30% 20%, rgba(0,0,0,.10), rgba(0,0,0,.58)),
+    linear-gradient(90deg, rgba(0,0,0,.58), rgba(0,0,0,.18));
+}
+
+.heroInner{
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  width: min(720px, 100%);
+}
+
+.heroMetaLine{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.pill{
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.24);
+  font-size: 12px;
+  color: rgba(255,255,255,.82);
+}
+
+.heroTitle{
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: .2px;
+  color: rgba(255,255,255,.96);
+  margin: 4px 0 10px;
+}
+
+.heroDesc{
+  max-width: 52ch;
+  color: rgba(255,255,255,.74);
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.heroActions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.heroLike{
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.25);
+  color: rgba(255,255,255,.92);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.heroLike:hover{ background: rgba(255,255,255,.06); }
+
+.chips{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 12px 6px 10px;
+}
+
+.chip{
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.18);
+  color: rgba(255,255,255,.78);
+  cursor: pointer;
+}
+
+.chip:hover{ background: rgba(255,255,255,.06); }
+
+.chipActive{
+  color: rgba(0,0,0,.92);
+  background: rgba(255,255,255,.86);
+  border-color: rgba(255,255,255,.70);
+}
+
+.section{
+  border-radius: 26px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(20,20,26,.42);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 24px 60px rgba(0,0,0,.26);
+  padding: 14px;
+}
+
+.rowWrap{
+  padding: 8px 4px 4px;
+}
+
+.msg{
+  padding: 14px 8px;
+  color: rgba(255,255,255,.70);
+}
+
+.err{
+  padding: 14px 8px;
+  color: rgba(255,120,120,.92);
+}
+
+@media (max-width: 640px){
+  .heroTitle{ font-size: 26px; }
+  .heroCard{ min-height: 300px; }
+}
