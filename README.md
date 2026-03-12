@@ -8,11 +8,6 @@ TMDB 및 한국 박스오피스 데이터를 기반으로
 
 ---
 
-## 🌐 Live Demo
-https://filmate.vercel.app
-
----
-
 # ✨ Features
 
 ## 🎥 콘텐츠 탐색
@@ -158,7 +153,6 @@ npm run dev
 ```
 ---
 
-```markdown
 # 📌 Future Improvements
 
 - 사용자 계정 시스템
